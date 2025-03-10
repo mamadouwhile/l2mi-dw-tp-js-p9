@@ -32,6 +32,10 @@ for (let dalton of daltons) {
 
 delete Dalton.prototype.nom;
 
+
+
+
+
 for (let dalton of daltons) {
     dalton.afficher(); 
 }
