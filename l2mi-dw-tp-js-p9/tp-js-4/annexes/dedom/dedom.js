@@ -24,6 +24,6 @@ liste1.querySelectorAll("li").forEach(li => {
     if (li.textContent.startsWith("D")) {
         li.style.fontFamily = "Cursive";
     } else {
-        li.textContent = "⚠️";
+        li.textContent = "\u26A0";
     }
 });
