@@ -1366,10 +1366,12 @@ function Societe(nom,codePostal,president){
 }
 
 Societe.prototype.toHTML = (datalist)=>{
-  
+  let option = document.createElement("option")
+  option.value = `${this.nom} – ${this.codePostal} – ${this.president}`;
+
+  datalist.appendChild(option);
+
 }
-
-
 
 societes.forEach(function (s) {
   let societe = new Societe(s[0], s[2], s[4]);
